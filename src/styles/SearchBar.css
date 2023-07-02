@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+}
+
+.searchSection {
+    margin-bottom: 40px;
+}
+
+
+.categorySection {
+    margin-bottom: 40px;
+}
+
+.priceSection {
+    margin-bottom: 40px;
+}
+
+.cards {
+    margin-bottom: 20px;
+    border-color: red;
+}
+
+.card.cards {
+    border: 2px solid black;
+  }

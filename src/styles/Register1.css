@@ -1,0 +1,24 @@
+.form-container {
+    width: 500px;
+}
+
+
+.custom-form {
+    width: 500px;/* Set the form width to fill the container */
+    /* Other CSS properties */
+    display: 'flex';
+  }
+
+  .progress-bar-container {
+    margin-bottom: 50px;
+  }
+
+  .button {
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+
+  .form-container {
+    display: flex;
+    justify-content: center;
+  }
