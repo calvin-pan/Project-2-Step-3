@@ -45,6 +45,7 @@
   .image-container {
     display: flex; /* Use flexbox to make the images appear in a row */
     gap: 10px; /* Adjust the gap between the images as needed */
+    margin-bottom: 20px;
   }
 
   .followTitle {
