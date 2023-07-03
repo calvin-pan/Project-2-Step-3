@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import '../styles/SearchBar.css';
 
 const products = [
   { id: 1, name: 'Recreational Swimming - Weekends - Day', category: ' Recreational Swimming', price: 10 },
@@ -15,7 +16,7 @@ const products = [
   { id: 9, name: 'Competitive Swim - Advanced', category: ' Competitive Swim', price: 50}
 ];
 
-const FacetedSearch = () => {
+const SearchBar = () => {
   const [selectedCategories, setSelectedCategories] = useState([]);
   const [selectedPrices, setSelectedPrices] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState(products);
@@ -124,8 +125,8 @@ const FacetedSearch = () => {
             {filteredProducts.map((product) => (
               <div key={product.id} className="card cards custom-card">
                 <h4>{product.name}</h4>
-                <p>Category: {product.category}</p>
-                <p>Price: ${product.price}</p>
+                <p className="marginBottomAndTop">Category: {product.category}</p>
+                <p className="marginBottom">Price: ${product.price}</p>
               </div>
             ))}
           </div>
@@ -135,6 +136,6 @@ const FacetedSearch = () => {
   );
 };
 
-export default FacetedSearch;
+export default SearchBar;
 
 

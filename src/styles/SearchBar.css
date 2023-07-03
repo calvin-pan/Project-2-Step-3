@@ -17,9 +17,19 @@ h1 {
 
 .cards {
     margin-bottom: 20px;
-    border-color: red;
 }
 
 .card.cards {
     border: 2px solid black;
+    padding-top: 16px;
+    padding-left: 16px;
+  }
+
+  .marginBottom {
+    margin-bottom: 16px;
+  }
+
+  .marginBottomAndTop {
+    margin-bottom: 16px;
+    margin-top: 8px;
   }

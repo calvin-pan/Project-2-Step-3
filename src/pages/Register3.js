@@ -41,7 +41,7 @@ function Register3() {
   };
 
   const openLink = () => {
-    window.location.href = './Register4';
+    window.location.href = '#/Register4';
   };
 
   return (

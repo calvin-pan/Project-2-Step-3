@@ -8,7 +8,7 @@ function Register4() {
     const number = Math.floor(Math.random() * 100) + 1;
 
     const openLink = () => {
-        window.location.href = './';
+        window.location.href = '#/';
     };
 
   return (

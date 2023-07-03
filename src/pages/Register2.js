@@ -6,7 +6,7 @@ import Container from 'react-bootstrap/Container';
 
 function Register2() {
     const openLink = () => {
-        window.location.href = './Register3';
+        window.location.href = '#/Register3';
       };
     
     
