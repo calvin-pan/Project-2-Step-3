@@ -21,7 +21,7 @@ function App() {
     <Router>
       {shouldRenderNavbar && <PageNavbar />}
       <Routes>
-        <Route path='/' element = {<Home />} />
+        <Route path='' element = {<Home />} />
         <Route path='/Aboutus' element = {<Aboutus />} />
         <Route path='/Programs' element = {<Programs />} />
         <Route path='/Register1' element = {<Register1 />} />
