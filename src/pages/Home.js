@@ -6,7 +6,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 function Home(){
   const openLink = () => {
-    window.location.href = './Aboutus';
+    window.location.href = '#/Aboutus';
   };
 
   return (

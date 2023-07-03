@@ -41,6 +41,10 @@ function Register1() {
     window.location.href = '#/Register2';
   };
 
+  const openLink2 = () => {
+    window.location.href = '#/';
+  };
+
   return (
     <div>
       <h1 className="title">Registration Form</h1>
@@ -68,8 +72,9 @@ function Register1() {
           </Form.Group>
 
           <div className="d-flex justify-content-center">
+          <Button class="primary" className="buttonMargin" onClick={openLink2}>Cancel</Button>
           <Button class="primary" className="button" onClick={openLink}>Next</Button>
-          </div>
+           </div>
         </Form>
         </Container>
 

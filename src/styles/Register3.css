@@ -17,3 +17,9 @@
     font-size: 16px;
     /* Add any other styles you want */
   }
+
+  .buttonMargin {
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right:5px;
+  }

@@ -9,6 +9,11 @@ function Register2() {
         window.location.href = '#/Register3';
       };
     
+
+      const openLink2 = () => {
+        window.location.href = '#/Register1';
+      };
+    
     
 
   return (
@@ -100,7 +105,8 @@ function Register2() {
                 </div>
                 ))}
                 <div className="d-flex justify-content-center">
-                <Button class="primary" onClick={openLink}>Next</Button>
+                <Button class="primary" className="buttonMargin" onClick={openLink2}>Back</Button>
+                <Button class="primary" className="button" onClick={openLink}>Next</Button>
                 </div>
             </Form>
         </div>
