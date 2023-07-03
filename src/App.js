@@ -11,6 +11,7 @@ import Register4 from './pages/Register4';
 import Contactus from './pages/Contactus';
 import ChatBox from './pages/ChatBox';
 import React from 'react';
+import { HashRouter } from 'react-router-dom';
 
 
 function App() {
@@ -18,7 +19,8 @@ function App() {
 
 
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    //<Router basename={process.env.PUBLIC_URL}>
+    <HashRouter basename="/">
       {shouldRenderNavbar && <PageNavbar />}
       <Routes>
         <Route path='/' element = {<Home />} />
@@ -31,7 +33,7 @@ function App() {
         <Route path='/Contactus' element = {<Contactus />} />
         <Route path='/ChatBox' element = {<ChatBox />} />
         </Routes>
-    </Router>
+    </HashRouter>/*</Router>*/
   );
 }
 

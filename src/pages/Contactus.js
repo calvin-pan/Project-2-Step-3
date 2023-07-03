@@ -7,12 +7,14 @@ import Image from 'react-bootstrap/Image';
 import '../styles/Contactus.css';
 import { RiPhoneLine } from 'react-icons/ri';
 import { BsEnvelope } from 'react-icons/bs';
+import { HashRouter as Router, Link, Route, Switch } from 'react-router-dom';
+
 
 import { Button } from 'react-bootstrap';
 function Contactus(){
 
     const toggleChatBox = () => {
-        window.open('./ChatBox', 'Chat Box', 'width=400,height=600');
+        window.open('#/ChatBox', 'Chat Box', 'width=400,height=600');
     };
 
     const handleEmailClick = () => {
@@ -34,7 +36,7 @@ function Contactus(){
                 <Row>
                     <Col xs={6} md={4}>
                     <div className="image-container">
-                        <Image src="/images/email.png" alt="Image" width="100px" height="100px" className="" />
+                        <Image src="images/email.png" alt="Image" width="100px" height="100px" className="" />
                         </div>
                         <br>
                         </br>
@@ -51,7 +53,7 @@ function Contactus(){
                     </Col>
                     <Col xs={6} md={4}>
                     <div className="image-container">
-                        <Image src="/images/phone.png" alt="Image" width="100px" height="100px" />
+                        <Image src="images/phone.png" alt="Image" width="100px" height="100px" />
                         </div>
 
                         <br>
@@ -70,7 +72,7 @@ function Contactus(){
 
                     <Col xs={6} md={4}>
                     <div className="image-container">
-                        <Image src="/images/chat.png" alt="Image" width="100px" height="100px" />
+                        <Image src="images/chat.png" alt="Image" width="100px" height="100px" />
                         </div>
                         <br>
                         </br>

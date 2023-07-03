@@ -21,10 +21,10 @@ function PageNavbar() {
   return (
     <Navbar expand="lg" bg="dark" variant="dark" className="custom-navbar">
       <Container>
-      <Navbar.Brand>
-      <a href="/">
+      <Navbar.Brand as={Link} to="/">
+
         <img src= "images/Drawing.png" width="200px" height="110px" />
-        </a>
+
       </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
