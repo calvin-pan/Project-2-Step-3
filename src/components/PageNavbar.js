@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import "../styles/navbar.css";
-import { Link, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Link, Route, Switch, useLocation } from 'react-router-dom';
 
 function PageNavbar() {
   const location = useLocation();
@@ -29,10 +29,10 @@ function PageNavbar() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link className='navBarLink' href="/Aboutus">ABOUT</Nav.Link>
-            <Nav.Link className='navBarLink' href="/Programs">PROGRAMS</Nav.Link>
-            <Nav.Link className='navBarLink' href="/Register1">REGISTER</Nav.Link>
-            <Nav.Link className='navBarLink' href="/Contactus">CONTACT US</Nav.Link>
+            <Nav.Link className='navBarLink' as={Link} to="/Aboutus">ABOUT</Nav.Link>
+            <Nav.Link className='navBarLink' as={Link} to="/Programs">PROGRAMS</Nav.Link>
+            <Nav.Link className='navBarLink' as={Link} to="/Register1">REGISTER</Nav.Link>
+            <Nav.Link className='navBarLink' as={Link} to="/Contactus">CONTACT US</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

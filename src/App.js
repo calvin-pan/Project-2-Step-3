@@ -18,10 +18,10 @@ function App() {
 
 
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       {shouldRenderNavbar && <PageNavbar />}
       <Routes>
-        <Route path='' element = {<Home />} />
+        <Route path='/' element = {<Home />} />
         <Route path='/Aboutus' element = {<Aboutus />} />
         <Route path='/Programs' element = {<Programs />} />
         <Route path='/Register1' element = {<Register1 />} />
